@@ -36,9 +36,9 @@ describe("Auth controller test", () => {
     expect(response.body.message).toBe("Registration successful");
   });
 
-  test("Login Test Before Deletion", async () => {
-    const n_id = "31231212";
-    const password = "12312";
+  test("Login Test", async () => {
+    const n_id = "1986209134109";
+    const password = "Ayesha1986";
     const response = await request(app)
       .post("/api/auth/login")
       .send({ n_id, password });
