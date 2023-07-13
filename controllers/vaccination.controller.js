@@ -66,13 +66,6 @@ const view_vaccines_completed = async (req, res) => {
       received_Vaccine: true,
     });
 
-    //now using Vaccination and Vaccine models, implement a look up that joins by vaccine_id and _id
-    // const vaccines = await Vaccination.find({ n_id: nid });
-    // const vaccines = await Vaccination.find({
-    //   n_id: nid,
-    //   received_Vaccine: true,
-    // });
-
 
     res.status(200).json({ success: true, data: vaccines });
   } catch (error) {
