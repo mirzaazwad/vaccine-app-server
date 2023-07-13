@@ -77,7 +77,7 @@ const login = async (req, res) => {
         user: user,
       });
   } catch (error) {
-    res.status(500).json(error.message );
+    res.status(500).json({message: "Login Unsuccessful! Please try again after some time!"});
   }
 };
 
