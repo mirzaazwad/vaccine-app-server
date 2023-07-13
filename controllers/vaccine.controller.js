@@ -5,7 +5,7 @@ const view_all_vaccines = async (req, res) => {
 
     const vaccines = await Vaccine.find({});
 
-    res.status(200).json({ success: true, data: vaccines });
+    res.status(200).json({ success: true, vaccine_info: vaccines });
   } catch (error) {
     console.error(error);
     res
