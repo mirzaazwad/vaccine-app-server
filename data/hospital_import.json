@@ -1,0 +1,53 @@
+[
+    {
+      "hospital_name": "Dhaka Medical College Hospital",
+      "hospital_address": "Dhaka Medical College and Hospital Road, Bakshibazar, Dhaka-1000",
+      "hospital_city": "Dhaka"
+    },
+    {
+      "hospital_name": "Bangabandhu Sheikh Mujib Medical University Hospital",
+      "hospital_address": "Shahbagh, Dhaka-1000",
+      "hospital_city": "Dhaka"
+    },
+    {
+      "hospital_name": "National Institute of Cardiovascular Diseases",
+      "hospital_address": "Sher-e-Bangla Nagar, Dhaka-1207",
+      "hospital_city": "Dhaka"
+    },
+    {
+      "hospital_name": "Chittagong Medical College Hospital",
+      "hospital_address": "Chittagong Medical College Road, Chittagong-4000",
+      "hospital_city": "Chittagong"
+    },
+    {
+      "hospital_name": "Rajshahi Medical College Hospital",
+      "hospital_address": "Rajshahi Medical College Road, Rajshahi-6000",
+      "hospital_city": "Rajshahi"
+    },
+    {
+      "hospital_name": "Sylhet MAG Osmani Medical College Hospital",
+      "hospital_address": "Shahjalal Upashahar, Sylhet-3100",
+      "hospital_city": "Sylhet"
+    },
+    {
+      "hospital_name": "Khulna Medical College Hospital",
+      "hospital_address": "KDA Avenue, Khulna-9100",
+      "hospital_city": "Khulna"
+    },
+    {
+      "hospital_name": "Barisal Medical College Hospital",
+      "hospital_address": "Barisal Medical College Road, Barisal-8200",
+      "hospital_city": "Barisal"
+    },
+    {
+      "hospital_name": "Rangpur Medical College Hospital",
+      "hospital_address": "Rangpur Medical College Road, Rangpur-5400",
+      "hospital_city": "Rangpur"
+    },
+    {
+      "hospital_name": "Mymensingh Medical College Hospital",
+      "hospital_address": "Medical College Road, Mymensingh-2200",
+      "hospital_city": "Mymensingh"
+    }
+  ]
+  

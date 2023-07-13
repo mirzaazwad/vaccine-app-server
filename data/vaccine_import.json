@@ -1,0 +1,66 @@
+[
+    {
+      "vaccine_name": "MMR (Measles, Mumps, Rubella)"
+    },
+    {
+      "vaccine_name": "DTaP (Diphtheria, Tetanus, Pertussis)"
+    },
+    {
+      "vaccine_name": "Hepatitis A"
+    },
+    {
+      "vaccine_name": "Hepatitis B"
+    },
+    {
+      "vaccine_name": "Polio"
+    },
+    {
+      "vaccine_name": "Varicella (Chickenpox)"
+    },
+    {
+      "vaccine_name": "HPV (Human Papillomavirus)"
+    },
+    {
+      "vaccine_name": "Influenza"
+    },
+    {
+      "vaccine_name": "Rotavirus"
+    },
+    {
+      "vaccine_name": "Meningococcal"
+    },
+    {
+      "vaccine_name": "Pneumococcal"
+    },
+    {
+      "vaccine_name": "Haemophilus influenzae type b (Hib)"
+    },
+    {
+      "vaccine_name": "Tdap (Tetanus, Diphtheria, Pertussis)"
+    },
+    {
+      "vaccine_name": "BCG (Bacillus Calmette-Guérin)"
+    },
+    {
+      "vaccine_name": "Typhoid"
+    },
+    {
+      "vaccine_name": "Yellow Fever"
+    },
+    {
+      "vaccine_name": "Rabies"
+    },
+    {
+      "vaccine_name": "Japanese Encephalitis"
+    },
+    {
+      "vaccine_name": "Cholera"
+    },
+    {
+      "vaccine_name": "Shingles (Herpes Zoster)"
+    },
+    {
+      "vaccine_name": "COVID-19"
+    }
+  ]
+  
