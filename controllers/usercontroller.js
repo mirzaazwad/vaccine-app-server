@@ -6,8 +6,9 @@ const fetchUserDetails=async(req,res)=>{
     const {n_id}=req.params;
     const user=await User.findOne({n_id});
     if(!user){
-      return res.status(404).json({succuss:true,user:user});
+      throw Error('User not found');
   }
+  res.status(200).json({success:true,user:user});
 }
   catch(error){
     console.error(error);
