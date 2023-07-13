@@ -22,13 +22,15 @@ describe("Auth controller test", () => {
     await connection.close();
   });
 
-  
   test("New Registration", async () => {
     const n_id = "31231212";
+    const name = "Jamal";
+    const address = "Dhaka";
     const password = "12312";
+
     const response = await request(app)
       .post("/api/auth/register")
-      .send({ n_id, password });
+      .send({ n_id, name, address, password });
 
     testIds.push(n_id);
     expect(response.body.message).toBe("Registration successful");
@@ -36,11 +38,12 @@ describe("Auth controller test", () => {
 
   test("Duplicate Registration", async () => {
     const n_id = "31231212";
+    const name = "Jamal";
+    const address = "Dhaka";
     const password = "12312";
-
     const response = await request(app)
       .post("/api/auth/register")
-      .send({ n_id, password });
+      .send({ n_id, name, address, password });
 
     expect(response.body.message).toBe("User already exists");
   });
