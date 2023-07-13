@@ -1,4 +1,4 @@
-name: Test
+name: Continuous Integration
 
 on:
   push:
@@ -6,7 +6,6 @@ on:
   pull_request:
     branches: [ "main" ]
   
-
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -18,16 +17,19 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "18"
+          node-version: "14"  # Adjust the Node.js version as per your project requirements
 
       - name: Install server dependencies
         run: npm install
 
       - name: Set up environment variables
-        run: echo "_MONGO_URI=${{ vars._MONGO_URI }}" >> $GITHUB_ENV
+        run: echo "_MONGO_URI=${{ secrets.MONGO_URI }}" >> $GITHUB_ENV
 
       - name: Run server tests
-        run: |
-          npm test
-          echo "TEST_RESULT=$?" >> $GITHUB_ENV
-      
+        run: npm test
+
+      - name: Save test result as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: path/to/test-results

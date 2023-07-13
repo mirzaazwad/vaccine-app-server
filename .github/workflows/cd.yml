@@ -1,32 +1,35 @@
-name: Deploy
+name: Continuous Deployment
 
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-  
 
 jobs:
-  build:
+  dummy:
     runs-on: ubuntu-latest
     steps:
-      -
-        name: Checkout
-        uses: actions/checkout@v3
-      -
-        name: Login to Docker Hub
+      - name: Dummy Step
+        run: echo "This is a dummy step"
+
+  deploy:
+    needs: dummy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      -
-        name: Set up Docker Buildx
+
+      - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
-      -
-        name: Build and push client
-        if: ${{ env.TEST_RESULT == '0' }}
-        uses: docker/build-push-action@v4
+
+      - name: Build and push server
+        if: ${{ needs.ci.outputs.test == '0' }}
+        uses: docker/build-push-action@v2
         with:
           context: .
           file: ./Dockerfile
