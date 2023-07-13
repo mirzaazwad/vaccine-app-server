@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon -L index.js",
     "test": "npx jest --detectOpenHandles --forceExit",
     "dev": "vite",
     "build": "vite build",
