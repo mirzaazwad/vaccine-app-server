@@ -77,7 +77,7 @@ const login = async (req, res) => {
         user: user,
       });
   } catch (error) {
-    res.status(500).json({ error: error });
+    res.status(500).json(error.message );
   }
 };
 
