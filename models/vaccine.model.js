@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
-const VaccinationSchema = new mongoose.Schema({
+const VaccineSchema = new mongoose.Schema({
   vaccine_name: {
     type: String,
     required: true,
   }
 });
-const Vaccination = mongoose.model("Vaccination", VaccinationSchema);
-module.exports = Vaccination;
+const Vaccine = mongoose.model("Vaccine", VaccineSchema);
+module.exports = Vaccine;

@@ -20,8 +20,11 @@ jobs:
         with:
           node-version: "18"
 
-      - name: Install client dependencies
+      - name: Install server dependencies
         run: npm install
+
+      - name: Set up environment variables
+        run: echo "_MONGO_URI=${{ vars._MONGO_URI }}" >> $GITHUB_ENV
 
       - name: Run server tests
         run: npm run test

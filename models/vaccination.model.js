@@ -6,6 +6,7 @@ const VaccinationSchema = new mongoose.Schema({
   },
   vaccination_date: {
     type: Date,
+    default: Date.now()
   },
   vaccine_id: {
     type: String,
