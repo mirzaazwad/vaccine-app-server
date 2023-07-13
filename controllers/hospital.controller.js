@@ -5,7 +5,7 @@ const view_hospitals = async (req, res) => {
 
     const hospital = await Hospital.find({});
 
-    res.status(200).json({ success: true, data: hospital });
+    res.status(200).json({ success: true, hospital_info: hospital });
   } catch (error) {
     console.error(error);
     res
