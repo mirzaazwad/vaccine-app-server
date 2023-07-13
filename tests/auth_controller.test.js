@@ -36,6 +36,16 @@ describe("Auth controller test", () => {
     expect(response.body.message).toBe("Registration successful");
   });
 
+  test("Login Test Before Deletion", async () => {
+    const n_id = "31231212";
+    const password = "12312";
+    const response = await request(app)
+      .post("/api/auth/login")
+      .send({ n_id, password });
+    expect(response.body.message).toBe("Login successful");
+  });
+
+
   test("Duplicate Registration", async () => {
     const n_id = "31231212";
     const name = "Jamal";
@@ -47,4 +57,6 @@ describe("Auth controller test", () => {
 
     expect(response.body.message).toBe("User already exists");
   });
+
+
 });

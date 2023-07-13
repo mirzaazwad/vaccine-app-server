@@ -25,6 +25,7 @@ jobs:
         uses: docker/setup-buildx-action@v2
       -
         name: Build and push client
+        if: ${{ env.TEST_RESULT == '0' }}
         uses: docker/build-push-action@v4
         with:
           context: .
