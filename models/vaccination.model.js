@@ -8,6 +8,10 @@ const VaccinationSchema = new mongoose.Schema({
     type: Date,
     default: Date.now()
   },
+  vaccine_name: {
+    type: String,
+    required: true,
+  },
   vaccine_id: {
     type: String,
     required: true,
