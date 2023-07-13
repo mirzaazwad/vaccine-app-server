@@ -12,7 +12,7 @@ connectDB();
 app.use("/api/auth", require("./routes/auth.route"));
 app.use("/api/vaccine", require("./routes/vaccination.route"));
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 const server = app.listen(port, () => {
 });
 
