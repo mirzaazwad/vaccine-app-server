@@ -14,7 +14,6 @@ const is_verify = async (req, res) => {
       user: req.user,
     });
   } catch (error) {
-    console.log(error);
     res.status(500).json("Server Error");
   }
 };

@@ -29,7 +29,6 @@ const vaccine_register = async (req, res) => {
       .status(200)
       .json({ success: true, message: "Vaccine registered successfully." });
   } catch (error) {
-    console.error(error);
     res
       .status(500)
       .json({ success: false, message: "Error registering the vaccine." });
@@ -39,7 +38,6 @@ const vaccine_register = async (req, res) => {
 const view_vaccine_appointments = async (req, res) => {
   try {
     const { nid } = req.params;
-    console.log(nid);
     // const vaccines = await Vaccination.find({ n_id: nid });
     const vaccines = await Vaccination.find({
       n_id: nid,
@@ -49,7 +47,6 @@ const view_vaccine_appointments = async (req, res) => {
 
     res.status(200).json({ success: true, data: vaccines });
   } catch (error) {
-    console.error(error);
     res
       .status(500)
       .json({ success: false, message: "Error retrieving vaccines." });
@@ -59,7 +56,6 @@ const view_vaccine_appointments = async (req, res) => {
 const view_vaccines_completed = async (req, res) => {
   try {
     const { nid } = req.params;
-    console.log(nid);
     // const vaccines = await Vaccination.find({ n_id: nid });
     const vaccines = await Vaccination.find({
       n_id: nid,
@@ -69,7 +65,6 @@ const view_vaccines_completed = async (req, res) => {
 
     res.status(200).json({ success: true, data: vaccines });
   } catch (error) {
-    console.error(error);
     res
       .status(500)
       .json({ success: false, message: "Error retrieving vaccines." });

@@ -7,7 +7,6 @@ const view_all_vaccines = async (req, res) => {
 
     res.status(200).json({ success: true, vaccine_info: vaccines });
   } catch (error) {
-    console.error(error);
     res
       .status(500)
       .json({ success: false, message: "Error registering the vaccine." });
