@@ -26,6 +26,9 @@ jobs:
       - name: Set up environment variables
         run: echo "_MONGO_URI=${{ vars._MONGO_URI }}" >> $GITHUB_ENV
 
+      - name: Set up secret variables
+        run: echo "_JWT_SECRET=${{ secrets._JWT_SECRET }}" >> $GITHUB_ENV
+
       - name: Run server tests
         run: npm run test
       

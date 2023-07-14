@@ -11,7 +11,7 @@ Additionally we also used:
 
 
 
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)![Datadog](https://img.shields.io/badge/datadog-%23632CA6.svg?style=for-the-badge&logo=datadog&logoColor=white)![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) 
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)![Datadog](https://img.shields.io/badge/datadog-%23632CA6.svg?style=for-the-badge&logo=datadog&logoColor=white)![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)![Jest](https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white)
 
 to implement a very basic level of dev ops
 
@@ -20,7 +20,7 @@ This project is divided into 2 segmrents in 2 seperate repositories:
 - client: [Client Side](https://github.com/NafisaMaliyat-iut/vaccine-app-client)
 - server: [Server Side](https://github.com/mirzaazwad/vaccine-app-server)
 
-  Finally this project is deployed so I encourage checking out the deployed project [Project URL](https://vacine-app.netlify.app/welcome)
+  Finally this project is deployed so I encourage checking out the deployed project [Project URL](https://vacine-app.netlify.app)
 
 
   Those who contributed heavily to this project includes:
@@ -29,5 +29,3 @@ This project is divided into 2 segmrents in 2 seperate repositories:
   - [Nawsheen Mehereen](https://www.linkedin.com/in/nawsheenmehereen/)
 
   - [Mirza Mohammad Azwad](https://www.linkedin.com/in/mirza-mohammad-azwad-b5239b1a4/)
-
-
