@@ -1,4 +1,4 @@
-# Client Side for Vaccine App
+# Server Side for Vaccine App
 
 In this app, we tried to integrate a dev ops based approach, with a CI/CD pipeline that consists of github actions being configured thorugh the yml workflows. We also integrated google cloud build 
 and cloud run to deploy the system. The deployment was automated using the existing features provided by GCP. Now the underlying technologies used to develop this simple
