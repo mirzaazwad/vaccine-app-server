@@ -38,7 +38,7 @@ describe("Auth controller test", () => {
 
   test("Login Test", async () => {
     const n_id = "1986209134109";
-    const password = "Ayesha1986";
+    const password = "Ayesha196";
     const response = await request(app)
       .post("/api/auth/login")
       .send({ n_id, password });
