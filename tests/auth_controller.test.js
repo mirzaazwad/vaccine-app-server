@@ -9,7 +9,7 @@ describe("Auth controller test", () => {
   let db;
   afterAll(async () => {
     server.close();
-    const uri = process.env._MONGO_URI; // Assumes your .env file has the MONGO_URI variable
+    const uri = process.env._MONGO_URI; 
     const client = new MongoClient(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
